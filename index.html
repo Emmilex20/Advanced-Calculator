@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="top-bar">
+  <label class="toggle-switch">
+    <input type="checkbox" id="theme-toggle" />
+    <span class="slider"></span>
+  </label>
+  <button id="copy-btn" title="Copy Result">📋</button>
+</div>
+  <div class="calculator">
+    <div class="display">
+      <div id="history" class="history"></div>
+      <input type="text" id="result" disabled />
+    </div>
+    <div class="buttons">
+      <!-- Scientific -->
+      <button data-func="sqrt">√</button>
+      <button data-func="sin">sin</button>
+      <button data-func="cos">cos</button>
+      <button data-func="tan">tan</button>
+
+      <button data-func="log">log</button>
+      <button data-func="exp">exp</button>
+      <button data-action="clear">C</button>
+      <button data-action="delete">DEL</button>
+
+      <!-- Numbers and operators -->
+      <button data-value="7">7</button>
+      <button data-value="8">8</button>
+      <button data-value="9">9</button>
+      <button data-value="/">÷</button>
+
+      <button data-value="4">4</button>
+      <button data-value="5">5</button>
+      <button data-value="6">6</button>
+      <button data-value="*">×</button>
+
+      <button data-value="1">1</button>
+      <button data-value="2">2</button>
+      <button data-value="3">3</button>
+      <button data-value="-">−</button>
+
+      <button data-value="0">0</button>
+      <button data-value=".">.</button>
+      <button data-value="+">+</button>
+      <button data-action="equal">=</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
